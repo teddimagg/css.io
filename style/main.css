@@ -1,0 +1,71 @@
+@font-face {
+	font-family: 'ApercuMedium';
+	src: url("../fonts/ApercuMedium.otf") format("opentype");
+}
+
+body {
+	background-color: rgba(0,0,0,0.6);
+	background-image: url('../img/noise.png');
+}
+
+h1, h2, h3, h4 {
+	font-family: 'ApercuMedium';
+}
+
+.header {
+	width: 100vw;
+	height: 60px;
+	background-color: #616161;
+}
+
+.header h1 {
+	padding: 10px;
+	margin: 0;
+	color: white;
+}
+
+.container {
+	display: flex;
+	widows: 100%;
+}
+
+.textEditor, .playGround {
+	width: 50%;
+	height: calc(100% - 60px);
+}
+
+.textEditor {
+
+}
+
+.playGround {
+	background-color: white;
+}
+
+#editor {
+	margin: 30px;
+	width: calc(100% - 100px);
+	height: calc(100% - 100px);
+	resize: none;
+}
+
+#editor {
+	background-color: rgba(0, 0, 0, 0.54);
+	color: white;
+	
+	border: none;
+	padding: 20px;
+
+	font-family: 'ApercuMedium';
+	font-size: 1.2em;
+
+	caret-color: orange;
+}
+
+#editor:focus {
+	outline: none;
+}
+
+.statement {
+	color: purple;
+}
